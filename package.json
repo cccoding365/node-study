@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "body-parser": "^1.20.1",
+    "express-art-template": "^1.0.1"
+  }
+}

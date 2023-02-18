@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>欢迎来到首页！</h1>
+  <h3>{{ name }}</h3>
+
+  {{ if num == 4 }}
+  <div> 共四本 </div>
+  {{ /if }}
+
+  <ul>
+
+    {{ each children }}
+    <li>第{{ $index + 1 }}本是《{{ $value }}》 </li>
+    {{ /each }}
+
+  </ul>
+  <ul>
+    {{ each array}}
+    <p>{{ $value | arrFilter }}</p>
+    {{/each }}
+  </ul>
+
+
+  <img src="/image/picture.png" alt="">
+</body>
+
+</html>
